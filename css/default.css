@@ -1,0 +1,127 @@
+body{
+	padding:0;
+	margin:0;
+	border:0;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	cursor:url('../image/boygirl.png'),auto;
+}
+
+@keyframes words{0%{opacity: 0;transform:scale(0.2,0.2);}70%{opacity: 1;transform:scale(0.8,0.8);}100%{opacity: 0;transform:scale(1.1,1.1);}}
+@-webkit-keyframes words{0%{opacity: 0;-webkit-transform:scale(0.2,0.2);}70%{opacity: 1;-webkit-transform:scale(0.8,0.8);}100%{opacity: 0;-webkit-transform:scale(1.1,1.1);}}
+@-moz-keyframes words{0%{-moz-opacity: 0;-moz-transform:scale(0.2,0.2);}70%{-moz-opacity: 1;-moz-transform:scale(0.8,0.8);}100%{-moz-opacity: 0;-moz-transform:scale(1.1,1.1);}}
+@-o-keyframes words{0%{opacity: 0;-o-transform:scale(0.2,0.2);}70%{opacity: 1;-o-transform:scale(0.8,0.8);}100%{opacity: 0;-o-transform:scale(1.1,1.1);}}
+@-ms-keyframes words{0%{filter:alpha(opacity=0); -ms-transform:scale(0.2,0.2);}70%{filter:alpha(opacity=100);;-ms-transform:scale(0.8,0.8);}100%{filter:alpha(opacity=0);-ms-transform:scale(1.1,1.1);}}
+
+@keyframes moonmove{from{}to{transform:translate(-140px,-130px) scale(0.6,0.6);}}
+@-webkit-keyframes moonmove{from{}to{-webkit-transform:translate(-140px,-130px) scale(0.6,0.6);}}
+@-moz-keyframes moonmove{from{}to{-moz-transform:translate(-140px,-130px) scale(0.6,0.6);}}
+@-o-keyframes moonmove{from{}to{-o-transform:translate(-140px,-130px) scale(0.6,0.6);}}
+@-ms-keyframes moonmove{from{}to{-o-transform:translate(-140px,-130px) scale(0.6,0.6);}}
+
+#moon{
+	position:absolute;
+	left: 15px; 
+	top: 15px; 
+	z-index:2;
+	animation: moonmove 5s ease-out forwards;
+	-webkit-animation: moonmove 5s ease-out forwards;
+	-moz-animation: moonmove 5s ease-out forwards;
+	-ms-animation: moonmove 5s ease-out forwards;
+	-o-animation: moonmove 5s ease-out forwards;
+}
+@keyframes flowermove{from{transform:translate(0px,0px) scale(0.0,0.0)}to{transform:translate(180px,-200px) scale(1.0,1.0)}}
+@-moz-keyframes flowermove{from{-moz-transform:translate(0px,0px) scale(0.0,0.0)}to{-moz-transform:translate(180px,-200px) scale(1.0,1.0)}}
+@-webkit-keyframes flowermove{from{-webkit-transform:translate(0px,0px) scale(0.0,0.0)}to{-webkit-transform:translate(180px,-200px) scale(1.0,1.0)}}
+@-o-keyframes flowermove{from{-o-transform:translate(0px,0px) scale(0.0,0.0)}to{-o-transform:translate(180px,-200px) scale(1.0,1.0)}}
+@-ms-keyframes flowermove{from{-ms-transform:translate(0px,0px) scale(0.0,0.0)}to{-ms-transform:translate(180px,-200px) scale(1.0,1.0)}}
+
+#flower{
+	position:absolute; 
+	width: 400px; 
+	left: -400px; 
+	top: 280px; 
+	z-index:2;
+	animation: flowermove 5s ease-out forwards;
+	-moz-animation: flowermove 5s ease-out forwards;
+	-webkit-animation: flowermove 5s ease-out forwards;
+	-ms-animation: flowermove 5s ease-out forwards;
+	-o-animation: flowermove 5s ease-out forwards;
+}
+
+@keyframes airmove{
+            0%{opacity: 0;transform:scale(1,0.8);}
+            40%{opacity: 1;transform:scale(1,1.2);}
+            100%{opacity: 0;transform:scale(1,1.7);}
+}
+@-webkit-keyframes airmove{
+            0%{opacity: 0;-webkit-transform:scale(1,0.8);}
+            40%{opacity: 1;-webkit-transform:scale(1,1.2);}
+            100%{opacity: 0;-webkit-transform:scale(1,1.7);}
+}
+@-moz-keyframes airmove{
+            0%{-moz-opacity: 0;-moz-transform:scale(1,0.8);}
+            40%{-moz-opacity: 1;-moz-transform:scale(1,1.2);}
+            100%{-moz-opacity: 0;-moz-transform:scale(1,1.7);}
+}
+@-o-keyframes airmove{
+            0%{opacity: 0;-o-transform:scale(1,0.8);}
+            40%{opacity: 1;-o-transform:scale(1,1.2);}
+            100%{opacity: 0;-o-transform:scale(1,1.7);}
+}
+@-ms-keyframes airmove{
+            0%{opacity: 0;filter:alpha(opacity=0);-ms-transform:scale(1,0.8);}
+            40%{opacity: 1;filter:alpha(opacity=100);-ms-transform:scale(1,1.2);}
+            100%{opacity: 0;filter:alpha(opacity=0);-ms-transform:scale(1,1.7);}
+}
+#air{
+	position: absolute;
+	bottom:75px;
+	left:60px;
+	animation: airmove 5s linear infinite;
+	-webkit-animation: airmove 5s linear infinite;
+	-moz-animation: airmove 5s linear infinite;
+	-o-animation: airmove 5s linear infinite;
+	-ms-animation: airmove 5s linear infinite;
+}
+
+#left{
+	height:100%;
+	width:30%;
+	background:url('../image/left.png') no-repeat;
+	background-size:100% 100%;
+	overflow:hidden;
+}
+#container{
+	height:100%;
+	width:100%;
+	position:absolute;
+	z-index:1;
+	background:url('../image/bg.png') repeat-x;
+	background-size:100% 101%;
+	overflow:hidden;
+	
+}
+#city{
+	position: absolute; 
+	width:70%;
+	right:0;
+	bottom:0;
+	background-position:right-side;
+	z-index:1001;
+}
+@keyframes rotating {from{transform: rotate(0deg);}to{transform: rotate(360deg);}}
+@-webkit-keyframes rotating {from{-webkit-transform: rotate(0deg);}to{-webkit-transform: rotate(360deg);}}
+@-o-keyframes rotating {from{-o-transform: rotate(0deg);}to{-o-transform: rotate(360deg);}}
+@-moz-keyframes rotating {from{-moz-transform: rotate(0deg);}to{-moz-transform: rotate(360deg);}}
+@-ms-keyframes rotating {from{-ms-transform: rotate(0deg);}to{-ms-transform: rotate(360deg);}}
+.on{
+	animation: rotating 3.2s linear infinite; 
+    -moz-animation: rotating 3.2s linear infinite; /*火狐*/
+	-webkit-animation: rotating 3.2s linear infinite;/*chrome/*/
+	-o-animation: rotating 3.2s linear infinite;/*oper*/
+	-ms-animation: rotating 3.2s linear infinite;/*IE*/
+}
+
+

@@ -1,0 +1,36 @@
+<html>
+	<head>
+	   <title>给我挚爱的人 - 文玉</title>
+	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	   <link rel="icon" href="./image/boygirl.png" type="image/x-icon" />
+	   <link href="./css/default.css"rel="stylesheet"type="text/css" />
+	   <script src="./js/jquery-2.0.0.min.js"></script>
+	   <script src="./js/start_plugin.js"></script>
+	   <script src="./js/Fireworks.js"></script>
+	   <script src="./js/word.js"></script>
+	   
+	</head>
+	<body onscroll="return false;"  oncontextmenu='return false' ondragstart='return false' onselectstart ='return false'>
+	  <div id="container">
+	     <div id="left">
+		  	<image id="moon" src="./image/moon.png"/>
+		    <image id="flower" src="./image/flower.png"/>
+			<image id="air" src="./image/air.png"/>
+		 </div>
+		 
+	  </div>
+	   <image id="city" src="./image/city.png"/>
+	  <div id="music" ></div>
+	  <div id="words"></div>
+	</body>
+	 <script>
+			$(function(){
+				$("#music").music({
+						music:"./music.mp3"
+					})
+				$("#words").scoller({
+					words:"宝贝 看不到你的容颜，才明白什么叫思念；听不到你的声音，才知道什么叫期盼；没有你在我身边，才深深体会到孤单,想你 宝贝~~"
+				})
+			});;
+	   </script>
+</html>
